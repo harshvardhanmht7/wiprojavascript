@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>console</title>
+
+  </head>
+  <body>
+    <h1 id="output"></h1>
+   <button id="btn1" type="button" value="1" name="button">1</button>
+   <button id="btn2" type="button" value="2" name="button">2</button>
+   <button id="btn3" type="button" value="3" name="button">3</button>
+   <br>
+   <button id="btn4" type="button" value="4" name="button">4</button>
+   <button id="btn5" type="button" value="5" name="button">5</button>
+   <button id="btn6" type="button" value="6" name="button">6</button>
+   <br>
+   <button id="btn7" type="button" value="7" name="button">7</button>
+   <button id="btn8" type="button"  value="8" name="button">8</button>
+   <button id="btn9" type="button" value="9" name="button">9</button>
+   <br>
+   <button id="btn0" type="button" value="0" name="button">0</button>
+   <button id="btn+" type="button" value="+" name="button">+</button>
+   <button id="btn-" type="button" value="-" name="button">-</button>
+   <br>
+   <button id="btn*" type="button" value="*" name="button">*</button>
+   <button id="btn/" type="button" value="/" name="button">/</button>
+   <button id="equal" type="button" value="=" name="button">=</button>
+
+      <script type="text/javascript">
+       var show="";
+
+    document.getElementById("btn1").addEventListener("click",function () {
+           var x = document.getElementById("btn1").value;
+          show=show+x;
+
+       document.getElementById("output").innerHTML = show;
+      });
+
+      document.getElementById("btn2").addEventListener("click",function () {
+             var x = document.getElementById("btn2").value;
+           show=show+x;
+document.getElementById("output").innerHTML = show;
+       });
+       document.getElementById("btn3").addEventListener("click",function () {
+               var x = document.getElementById("btn3").value;
+
+               show=show+x;
+          document.getElementById("output").innerHTML = show;
+         });document.getElementById("btn4").addEventListener("click",function () {
+                 var x = document.getElementById("btn4").value;
+                 show=show+x;
+      document.getElementById("output").innerHTML = show;
+           });
+          document.getElementById("btn5").addEventListener("click",function () {
+                   var x = document.getElementById("btn5").value;
+                   show=show+x;
+              document.getElementById("output").innerHTML = show;        });
+
+              document.getElementById("btn6").addEventListener("click",function () {
+                       var x = document.getElementById("btn6").value;
+                       show=show+x;
+                  document.getElementById("output").innerHTML = show;        });
+
+                  document.getElementById("btn7").addEventListener("click",function () {
+                           var x = document.getElementById("btn7").value;
+                           show=show+x;
+                      document.getElementById("output").innerHTML = show;        });
+
+                      document.getElementById("btn8").addEventListener("click",function () {
+                               var x = document.getElementById("btn8").value;
+                               show=show+x;
+                          document.getElementById("output").innerHTML = show;        });
+
+
+
+
+                          document.getElementById("btn9").addEventListener("click",function () {
+                                   var x = document.getElementById("btn9").value;
+                                   show=show+x;
+                              document.getElementById("output").innerHTML = show;        });
+
+
+                              document.getElementById("btn0").addEventListener("click",function () {
+                                       var x = document.getElementById("btn0").value;
+                                       show=show+x;
+                                  document.getElementById("output").innerHTML = show;        });
+
+
+
+                                  document.getElementById("btn+").addEventListener("click",function () {
+                                           var x = document.getElementById("btn+").value;
+                                           show=show+x;
+                                      document.getElementById("output").innerHTML = show;        });
+
+
+
+                                      document.getElementById("btn-").addEventListener("click",function () {
+                                               var x = document.getElementById("btn-").value;
+                                               show=show+x;
+                                          document.getElementById("output").innerHTML = show;        });
+
+
+                                          document.getElementById("btn*").addEventListener("click",function () {
+                                                   var x = document.getElementById("btn*").value;
+                                                   show=show+x;
+                                              document.getElementById("output").innerHTML = show;        });
+
+
+                                              document.getElementById("btn/").addEventListener("click",function () {
+                                                       var x = document.getElementById("btn/").value;
+                                                       show=show+x;
+                                                  document.getElementById("output").innerHTML = show;        });
+
+                                                  document.getElementById("equal").addEventListener("click",function () {
+
+                                                           show =eval(show);
+                                                      document.getElementById("output").innerHTML = show;        });
+
+
+
+
+
+
+
+      </script>
+
+  </body>
+</html>

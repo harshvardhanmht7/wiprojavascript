@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>sort</title>
+
+   <script type="text/javascript">
+
+   function bubble(arr){
+
+    var length = arr.length;
+
+
+    for (var i = length-1; i >= 0; i--){
+
+       for(var j = 1; j <= i; j++){
+
+           if(arr[j-1] > arr[j]){
+               var temp = arr[j-1];
+               arr[j-1] = arr[j];
+               arr[j] = temp;
+            }
+       }
+     }
+  document.write("arr sorted by bubble sort = "+arr+"<br />");
+
+     }
+
+
+     function selection(arr){
+
+       let length = arr.length;
+
+
+       for(var i = 0; i < length; i++) {
+             var min = i;
+           for(var j = i + 1; j < length; j++) {
+                   if(arr[min] > arr[j]) {
+
+                   min = j;
+               }
+           }
+
+           if(min !== i) {
+               let temp = list[i];
+               arr[i] = arr[min];
+               arr[min] = temp;
+           }
+       }
+       document.write("arr sorted by selection sort = "+arr);
+
+     }
+
+
+
+
+
+
+     var a=[2,1,4,2];
+bubble(a);
+selection(a);
+
+
+   </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>

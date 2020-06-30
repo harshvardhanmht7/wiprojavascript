@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>images</title>
+
+   <script type="text/javascript">
+    function first() {
+     document.getElementById('1').src="4.jpg";
+    }
+    function firstout() {
+     document.getElementById('1').src="1.jpg";
+    }
+    function sec() {
+     document.getElementById('2').src="5.jpg";
+    }
+    function secout() {
+     document.getElementById('2').src="2.jpg";
+}
+     function third() {
+      document.getElementById('3').src="6.jpg";
+     }
+     function thirdout() {
+      document.getElementById('3').src="3.jpg";
+    }
+   </script>
+
+  </head>
+  <body>
+  <img id="2" width="400px" height="400px" onmouseover="sec()" onmouseout="secout()" src="2.jpg" alt="">
+  <img id="1" width="400px" height="400px" onmouseover="first()" onmouseout="firstout()" src="1.jpg" alt="">
+  <img id="3" width="400px" height="400px" onmouseover="third()" onmouseout="thirdout()" src="3.jpg" alt="">
+  </body>
+</html>

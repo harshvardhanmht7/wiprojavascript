@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>url</title>
+
+   <script type="text/javascript">
+
+function url(u) {
+  var protocol="";
+  var port="";
+  var host="";
+  var parameter="";
+  var query ="";
+
+  var k=0;
+  for(var i=k;u[i]!=":";i++)
+  {k++;
+    protocol=protocol+u[i];
+  }
+  k=k+3;
+  for(var i=k;u[i]!="/"&&u[i]!=":";i++)
+  {
+    k++;
+
+    host=host+u[i];
+  }
+
+ if(u[k]==':')
+ {
+     k++;
+   for(var i=k;u[i]!="/"&&u[i]!="?";i++)
+   {
+     k++;
+     port=port+u[i];
+   }
+ }
+
+if(u[k]=="?")
+{
+  k++;
+  for(var i=k;i<u.length;i++)
+  {
+    k++;
+    if(u[i]=="&")
+    {
+      parameter=parameter+" , ";
+    }
+    else {
+
+        parameter=parameter+u[i];
+    }
+
+    query=query+u[i];
+
+  }
+  document.write("protocol = "+protocol+"<br />"+"host = "+host+"<br />"+"port = "+port+"<br />"+"query = "+query+"<br />"+"parameters = "+parameter);
+}
+
+
+}
+
+
+
+
+var u='https://www.google.com:3000?name="harsh"&age="24"';
+url(u);
+
+   </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>

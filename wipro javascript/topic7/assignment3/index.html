@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>last elements</title>
+
+   <script type="text/javascript">
+
+  function last(a,n)
+   {
+     if(n>a.length)
+     {
+       for(var i=a.length-1;i>=0;i--)
+       {
+         document.write(a[i]);
+         if(i>0)
+         {
+           document.write(",");
+         }
+       }
+     }
+     else{
+       for(var i=a.length-1;i>=a.length-n;i--)
+       {
+         document.write(a[i]);
+         if(i>a.length-n)
+         {
+           document.write(",");
+         }
+       }
+     }
+   }
+   a=[1,2,3,4,5,6];
+   n=6;
+last(a,n);
+
+   </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>

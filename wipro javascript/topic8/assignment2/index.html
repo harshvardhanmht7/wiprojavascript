@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>sort</title>
+
+   <script type="text/javascript">
+
+   var x = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+  var y = {firstName:"harsh", lastName:"mehta", age:23, eyeColor:"black"};
+  var z = {firstName:"sahil", lastName:"bisht", age:33, eyeColor:"brown"};
+
+      var c=[];
+      c[0]=x.age;c[1]=y.age;c[2]=z.age;
+      var a=[];
+      a[0]="x";a[1]="y";a[2]="z";
+      for(var i=0;i<c.length-1;i++)
+      {
+        for(var j=i+1;j<c.length;j++)
+        {
+          if(c[i]>c[j])
+          {
+            var temp=c[i];
+            c[i]=c[j];
+            c[j]=temp;
+
+            var temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+          }
+        }
+      }
+      document.write(a);
+
+   </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>

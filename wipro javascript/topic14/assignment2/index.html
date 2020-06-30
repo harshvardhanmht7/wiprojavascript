@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>error</title>
+
+   <script type="text/javascript">
+   function err(a) {
+   return ( toString.call(a) === '[object Error]'|| a instanceof Error  );
+}
+
+document.write(err(100)+"<br /> ");
+document.write(err(new Error("harsh")));
+
+   </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>

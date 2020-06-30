@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>slideshow</title>
+
+
+
+
+  </head>
+  <body>
+    <div style="text-align:center" id="image">
+     <img width="800px" height="600px" src="1.jpg" id="slide" alt="">
+    </div>
+<div style="text-align:center" id="image">
+  <button   id="backward" onclick="backward()" >backward</button>
+<button id="forward" onclick="forward()" >forward</button>
+  </div>
+
+
+  <script type="text/javascript">
+  var arr=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg'];
+ var count=0;
+ if (count==0) {
+   document.getElementById("backward").style.display = "none";
+ }
+
+
+
+  function forward() {
+
+   document.getElementById('slide').src=arr[++count];
+     document.getElementById("backward").style.display = "";
+     if(count==5)
+     {
+       document.getElementById("forward").style.display = "none";
+     }
+
+  }
+  function backward() {
+   document.getElementById('slide').src=arr[--count];
+
+document.getElementById("forward").style.display = "";
+
+  }
+
+  </script>
+
+
+  </body>
+</html>
